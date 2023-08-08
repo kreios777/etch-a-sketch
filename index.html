@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/pf-tempesta-five" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <header>ETCH-A-SKETCH</header>
+        <div class="board-container">
+            <div class="grid" id="grid">
+                
+            </div>
+            <div class="color-eraser">
+                <div class="color">
+
+                    <!--CHANGE this label to logo; BLACK = circle na black
+                    RGB = circle na RGB, CUSTOM = pallete logo, ERASER = eraser logo-->
+                    <button class="RGB" id="rainbowBtn">Rainbow</button>
+                    <button class="black" id="colorBtn">Color Mode</button>
+                    <input type='color' id="colorPicker" value="#333333">
+                    <button class="eraser" id="eraserBtn">Eraser</button>
+                </div>
+            </div>
+            <div class="slider-clear">
+                <div class="slider">
+                    <input type="range" id="sizeSlider" min="16" max="100" value="16">
+                    <p>Value: <output id="sizeValue"></output></p>
+                </div>
+                <div class="clear-container">
+                    <button class="clear" id="clearBtn">clear</button>
+                </div>
+            </div>
+        </div>
+        <footer><h6>Made by: Kreios777</h6> </footer>
+    </div>
+
+    <script src="etchSketch.js">
+
+    </script>
+</body>
+</html>
